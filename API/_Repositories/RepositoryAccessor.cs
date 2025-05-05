@@ -26,12 +26,11 @@ namespace API._Repositories
     public partial class RepositoryAccessor : FunctionRepository, IRepositoryAccessor
     {
         // 1. Tạo Repository với Model
-        public IRepository<Demo> Demo { get; set; }
-
+        public IRepository<Service> Service { get; set; }
         public RepositoryAccessor(DBContext dbContext) : base(dbContext)
         {
             // 2. Khởi tạo với Repo
-            Demo = new Repository<Demo, DBContext>(_dbContext);
+            Service = new Repository<Service, DBContext>(_dbContext);
         }
     }
 }

@@ -13,6 +13,6 @@ namespace API._Repositories
     public interface IRepositoryAccessor : IFunctionRepository
     {
         // 1. Init Repository
-        IRepository<Demo> Demo { get; }
+        IRepository<Service> Service { get; }
     }
 }

@@ -1,4 +1,7 @@
+using API._Services.Interfaces;
+using API._Services.Services;
 using API.Configurations;
+using API.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +27,7 @@ builder.Services.AddSwaggerGenConfiguration();
 // Aspose Config
 AsposeUtility.Install();
 builder.Services.AddScoped<SDCores.ExceptionHandlingMiddleware>();
+builder.Services.AddScoped<I_Service, S_Service_Dental>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

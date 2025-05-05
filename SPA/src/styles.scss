@@ -1,0 +1,31 @@
+// // If you want to override variables do it here
+// @import "variables";
+
+// // Import styles
+// @import "@coreui/coreui/scss/coreui";
+
+// // If you want to add something do it here
+// @import "custom";
+
+
+
+// Here you can add other styles
+.menu-margin a {
+    padding-left: 30px !important;
+}
+.menu-child-margin a {
+    padding-left: 35px !important;
+}
+
+.sidebar .nav-link:hover {
+    background: #000;
+}
+.sidebar .nav-link {
+    color: #b4bcc8 !important;
+}
+
+.nav {
+    background-color: #364150 !important;
+}
+
+
